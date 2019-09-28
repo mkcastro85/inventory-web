@@ -5,6 +5,10 @@
   {{progress}}%
 </span>
 
+<span style="font-weight:bold;color:red;" *ngIf="error">
+    {{error}}
+  </span>
+
 <span style="font-weight:bold;" >
     <h3>Bovinos</h3>
     <ul *ngFor="let item of bovinos">
