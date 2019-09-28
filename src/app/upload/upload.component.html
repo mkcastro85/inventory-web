@@ -1,0 +1,22 @@
+<h1>Seleccione inventario</h1>
+<input #file type="file" multiple (change)="upload(file.files)" />
+<br/>
+<span style="font-weight:bold;color:green;" *ngIf="progress > 0 && progress < 100">
+  {{progress}}%
+</span>
+
+<span style="font-weight:bold;" >
+    <h3>Bovinos</h3>
+    <ul *ngFor="let item of bovinos">
+            <li> {{item}}</li>
+        </ul>
+</span>
+
+<span style="font-weight:bold;">
+    <h3>Equinos</h3>
+    <ul *ngFor="let item of equinos">
+        <li> {{item}}</li>
+    </ul>
+
+   
+  </span>
